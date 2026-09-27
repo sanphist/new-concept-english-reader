@@ -16,19 +16,25 @@ https://sanphist.github.io/new-concept-english-reader/book-1.html
 
 https://sanphist.github.io/new-concept-english-reader/book-2.html
 
-### 第二册｜96课脱口秀中文重译
+### 新概念第二册课文中文翻译
 
 https://sanphist.github.io/new-concept-english-reader/book-2-standup.html
-
-这是在第二册原文基础上制作的中文脱口秀式重译版，共 96 课。保留原文人物、事件、误会和反转，用更自然、更口语化的中文重新表达。
 
 ### 第三册
 
 https://sanphist.github.io/new-concept-english-reader/book-3.html
 
+### 新概念第三册课文中文翻译
+
+https://sanphist.github.io/new-concept-english-reader/book-3-zh.html
+
 ### 第四册
 
 https://sanphist.github.io/new-concept-english-reader/book-4.html
+
+### 新概念第四册课文中文翻译
+
+https://sanphist.github.io/new-concept-english-reader/book-4-zh.html
 
 ## GitHub 仓库
 
