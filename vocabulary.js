@@ -157,5 +157,6 @@
     document.documentElement.dataset.theme = next;
     try { localStorage.setItem('nce-theme',next); } catch { /* Keep current session theme. */ }
   });
-  switchList('proper');
+  const requested = new URLSearchParams(location.search).get('list');
+  switchList(['proper','extra','missing'].includes(requested) ? requested : 'proper');
 })();
