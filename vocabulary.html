@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="新概念英语一至四册的专有名词、牛津3000以外词形与未覆盖词条。">
+  <title>超纲词汇 · 新概念英语课文阅读</title>
+  <link rel="stylesheet" href="vocabulary.css">
+  <script src="vocabulary-data.js" defer></script>
+  <script src="vocabulary.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="site-title" href="index.html"><strong>新概念英语</strong><span>课文阅读 · 词汇学习</span></a>
+    <nav class="book-tabs" aria-label="网站导航">
+      <a href="index.html">首页</a>
+      <a href="book-1.html">第一册</a>
+      <a href="book-2.html">第二册</a>
+      <a href="book-3.html">第三册</a>
+      <a href="book-4.html">第四册</a>
+      <a href="vocabulary.html" aria-current="page">超纲</a>
+    </nav>
+    <button class="icon-btn" id="themeToggle" type="button" title="切换深色模式" aria-label="切换深色模式">◐</button>
+  </header>
+  <main class="vocab-page">
+    <section class="vocab-hero">
+      <span class="eyebrow">NEW CONCEPT ENGLISH · BOOKS 1–4</span>
+      <h1>超纲词汇</h1>
+      <p>将四册课文中的专有名词、牛津 3000 以外的其他词，以及课文未覆盖的牛津 3000 词分别列出。可查找、筛选、听发音，并标记已掌握的词。</p>
+      <div class="hero-actions">
+        <a class="download-link" href="vocabulary-list.txt" download>下载完整词表 TXT ↓</a>
+        <a class="source-link" href="https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/American_Oxford_3000.pdf" target="_blank" rel="noopener noreferrer">查看牛津词表来源 ↗</a>
+      </div>
+    </section>
+    <div class="vocab-tabs" role="tablist" aria-label="词汇类别">
+      <button type="button" role="tab" id="tab-proper" aria-controls="panel-list" aria-selected="true" data-list="proper">专有名词 <span id="properTotal"></span></button>
+      <button type="button" role="tab" id="tab-extra" aria-controls="panel-list" aria-selected="false" data-list="extra">其他超纲词 <span id="extraTotal"></span></button>
+      <button type="button" role="tab" id="tab-missing" aria-controls="panel-list" aria-selected="false" data-list="missing">牛津3000未覆盖 <span id="missingTotal"></span></button>
+    </div>
+    <section class="vocab-main" id="panel-list" role="tabpanel" aria-labelledby="tab-proper">
+      <div class="vocab-intro" id="listIntro"></div>
+      <div class="vocab-controls">
+        <label for="wordSearch">查找</label>
+        <input id="wordSearch" type="search" placeholder="输入英文单词或名称…" autocomplete="off">
+        <label for="wordFilter">筛选</label>
+        <select id="wordFilter"><option value="all">全部类别</option></select>
+        <label class="hide-known"><input id="hideKnown" type="checkbox"> 只看未掌握</label>
+      </div>
+      <div class="study-bar">
+        <p id="resultCount" aria-live="polite"></p>
+        <p id="learnedCount"></p>
+        <button type="button" id="randomWord">随机学一个 ↗</button>
+      </div>
+      <div id="studyCard" class="study-card" hidden>
+        <div><span class="eyebrow">随机练习</span><strong id="studyWord"></strong><small id="studyMeta"></small></div>
+        <div class="study-actions">
+          <button type="button" id="studySpeak">▶ 发音</button>
+          <button type="button" id="studyKnown">标记已掌握</button>
+          <button type="button" id="studyNext">下一个</button>
+        </div>
+      </div>
+      <ul class="word-list" id="wordList" aria-label="词汇列表"></ul>
+      <div class="load-more-wrap"><button type="button" id="loadMore" hidden>显示更多</button></div>
+    </section>
+    <p class="vocab-note">统计仅表示课文中出现过相应词形，不判断词义或词性。其他超纲词按实际词形列出，不同变形可能分别出现；课文标题不计入。专有名词含人名、地名、机构名称及相关专有形容词。学习进度只保存在当前浏览器。</p>
+  </main>
+</body>
+</html>
